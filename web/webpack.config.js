@@ -12,10 +12,10 @@ module.exports = {
         }
       }, {
         test: /\.scss/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?browsers=last 2 versions!sass-loader'
+        loader: 'style-loader!css-loader'
       }, {
         test: /\.css$/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?browsers=last 2 versions'
+        loader: 'style-loader!css-loader'
       }
     ]
   },
@@ -34,7 +34,7 @@ module.exports = {
 
   devServer: {
     proxy: {
-      '/api/*': 'http://localhost:3000/',
+      '/api/*': 'http://localhost:8000/',
       headers: { "Access-Control-Allow-Origin": "*" }
     },
     historyApiFallback: true, // history fallthrough lets React Router handle routing
