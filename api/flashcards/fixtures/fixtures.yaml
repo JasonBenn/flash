@@ -1,0 +1,150 @@
+- model: flashcards.card
+  pk: 1
+  fields:
+    front: >
+      asdfasdf
+    back: >
+      asdfas
+    path: Operating Systems
+    created: !!timestamp '2010-11-17 13:12:11'
+    updated: !!timestamp '2010-11-17 13:12:11'
+
+
+- model: flashcards.card
+  pk: 2
+  fields:
+    front: >
+      2>1 vs 2>&1?
+    back: >
+      2>1 redirects stderr in a file named 1 2>&1 redirects stderr to stdout & in the context of redirects means file descriptors. So &1 is stdout.
+    path: Operating Systems
+    created: !!timestamp '2010-11-17 13:12:11'
+    updated: !!timestamp '2010-11-17 13:12:11'
+
+- model: flashcards.card
+  pk: 3
+  fields:
+    front: >
+      Change a file access and modification times (atime, mtime)
+    back: >
+      touch
+      Can also set them to arbitrary value or to match another file
+    path: Operating Systems
+    created: !!timestamp '2010-11-17 13:12:11'
+    updated: !!timestamp '2010-11-17 13:12:11'
+
+- model: flashcards.card
+  pk: 4
+  fields:
+    front: >
+      Copies files between hosts on a network Works over a secure connection (SSH)
+    back: >
+      scp
+    path: Operating Systems
+    created: !!timestamp '2010-11-17 13:12:11'
+    updated: !!timestamp '2010-11-17 13:12:11'
+
+- model: flashcards.card
+  pk: 5
+  fields:
+    front: >
+      Displays various networks related information such as open connections, open socket ports etc
+    back: >
+      List all ports `netstat -a`
+      List all listening ports `netstat -l`
+      List listening TCP ports `netstat -t`
+      Display PID and program names for a specific port `netstat -p {PROTOCOL}`
+    path: Operating Systems
+    created: !!timestamp '2010-11-17 13:12:11'
+    updated: !!timestamp '2010-11-17 13:12:11'
+
+- model: flashcards.card
+  pk: 6
+  fields:
+    front: >
+      Dump traffic on a network
+    back: >
+      tcpdump
+      capture the traffic from a specific interface, source, destination and port:
+      tcpdump -i [eth0] src [192.168.1.1] dest [192.168.1.2] and port 80
+      capture the traffic from or to a host tcpdump host [www.example.com]
+    path: Operating Systems
+    created: !!timestamp '2010-11-17 13:12:11'
+    updated: !!timestamp '2010-11-17 13:12:11'
+
+- model: flashcards.card
+  pk: 7
+  fields:
+    front: >
+      How do you redirect STDERR to STDOUT?
+    back: >
+      2>&1
+    path: Operating Systems
+    created: !!timestamp '2010-11-17 13:12:11'
+    updated: !!timestamp '2010-11-17 13:12:11'
+
+- model: flashcards.card
+  pk: 8
+  fields:
+    front: >
+      How do you redirect both STDERR and STDOUT to a file?
+    back: >
+      (echo stdout; echo stderr 1>&2) &> file OR: tail > file 2&>1
+    path: Operating Systems
+    created: !!timestamp '2010-11-17 13:12:11'
+    updated: !!timestamp '2010-11-17 13:12:11'
+
+- model: flashcards.card
+  pk: 9
+  fields:
+    front: >
+      Less: jump to 90% through the file? Open file at 90%?
+    back: >
+      90p less +90p today.log
+    path: Operating Systems
+    created: !!timestamp '2010-11-17 13:12:11'
+    updated: !!timestamp '2010-11-17 13:12:11'
+
+- model: flashcards.card
+  pk: 10
+  fields:
+    front: >
+      Place standard output in the clipboard
+    back: >
+      pbcopy
+    path: Operating Systems
+    created: !!timestamp '2010-11-17 13:12:11'
+    updated: !!timestamp '2010-11-17 13:12:11'
+
+- model: flashcards.card
+  pk: 11
+  fields:
+    front: >
+      Print the route packets trace to network host
+    back: >
+      traceroute [host]
+    path: Operating Systems
+    created: !!timestamp '2010-11-17 13:12:11'
+    updated: !!timestamp '2010-11-17 13:12:11'
+
+- model: flashcards.card
+  pk: 12
+  fields:
+    front: >
+      Run replacements based on regular expressions
+    back: >
+      sed replace all occurrences of a string in a file, and print the result sed 's/[find]/[replace]/g' [filename]
+    path: Operating Systems
+    created: !!timestamp '2010-11-17 13:12:11'
+    updated: !!timestamp '2010-11-17 13:12:11'
+
+- model: flashcards.card
+  pk: 13
+  fields:
+    front: >
+      Search file for occurences of `{` in file txt
+    back: >
+      egrep '{' txt single quotes ensure that char is not evaluated by the shell, but instead by egrep.
+    path: Operating Systems
+    created: !!timestamp '2010-11-17 13:12:11'
+    updated: !!timestamp '2010-11-17 13:12:11'
