@@ -1,5 +1,5 @@
 - model: flashcards.card
-  pk: 1
+  id: 1
   fields:
     front: >
       asdfasdf
@@ -11,7 +11,7 @@
 
 
 - model: flashcards.card
-  pk: 2
+  id: 2
   fields:
     front: >
       2>1 vs 2>&1?
@@ -22,7 +22,7 @@
     updated: !!timestamp '2010-11-17 13:12:11'
 
 - model: flashcards.card
-  pk: 3
+  id: 3
   fields:
     front: >
       Change a file access and modification times (atime, mtime)
@@ -34,7 +34,7 @@
     updated: !!timestamp '2010-11-17 13:12:11'
 
 - model: flashcards.card
-  pk: 4
+  id: 4
   fields:
     front: >
       Copies files between hosts on a network Works over a secure connection (SSH)
@@ -45,7 +45,7 @@
     updated: !!timestamp '2010-11-17 13:12:11'
 
 - model: flashcards.card
-  pk: 5
+  id: 5
   fields:
     front: >
       Displays various networks related information such as open connections, open socket ports etc
@@ -59,7 +59,7 @@
     updated: !!timestamp '2010-11-17 13:12:11'
 
 - model: flashcards.card
-  pk: 6
+  id: 6
   fields:
     front: >
       Dump traffic on a network
@@ -73,7 +73,7 @@
     updated: !!timestamp '2010-11-17 13:12:11'
 
 - model: flashcards.card
-  pk: 7
+  id: 7
   fields:
     front: >
       How do you redirect STDERR to STDOUT?
@@ -84,7 +84,7 @@
     updated: !!timestamp '2010-11-17 13:12:11'
 
 - model: flashcards.card
-  pk: 8
+  id: 8
   fields:
     front: >
       How do you redirect both STDERR and STDOUT to a file?
@@ -95,7 +95,7 @@
     updated: !!timestamp '2010-11-17 13:12:11'
 
 - model: flashcards.card
-  pk: 9
+  id: 9
   fields:
     front: >
       Less: jump to 90% through the file? Open file at 90%?
@@ -106,7 +106,7 @@
     updated: !!timestamp '2010-11-17 13:12:11'
 
 - model: flashcards.card
-  pk: 10
+  id: 10
   fields:
     front: >
       Place standard output in the clipboard
@@ -117,7 +117,7 @@
     updated: !!timestamp '2010-11-17 13:12:11'
 
 - model: flashcards.card
-  pk: 11
+  id: 11
   fields:
     front: >
       Print the route packets trace to network host
@@ -128,7 +128,7 @@
     updated: !!timestamp '2010-11-17 13:12:11'
 
 - model: flashcards.card
-  pk: 12
+  id: 12
   fields:
     front: >
       Run replacements based on regular expressions
@@ -139,7 +139,7 @@
     updated: !!timestamp '2010-11-17 13:12:11'
 
 - model: flashcards.card
-  pk: 13
+  id: 13
   fields:
     front: >
       Search file for occurences of `{` in file txt

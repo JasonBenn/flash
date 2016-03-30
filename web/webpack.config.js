@@ -16,6 +16,9 @@ module.exports = {
       }, {
         test: /\.css$/,
         loader: 'style-loader!css-loader'
+      }, {
+        test: /\.json$/,
+        loader: 'json-loader'
       }
     ]
   },
@@ -34,9 +37,22 @@ module.exports = {
 
   devServer: {
     proxy: {
-      '/api/*': 'http://localhost:8000/',
-      headers: { "Access-Control-Allow-Origin": "*" }
+      '/api/*': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+        secure: false
+        // bypass: function(req, res, proxyOptions) {
+        //   if (req.headers.accept.indexOf('html') !== -1) {
+        //     console.log('Skipping proxy for browser request.');
+        //     return '/index.html';
+        // }
+      },
     },
+    // headers: { 
+    //   "Access-Control-Allow-Origin": "*",
+    //   "Access-Control-Allow-Credentials": "true"
+    // },
+    withCredentials: false,
     historyApiFallback: true, // history fallthrough lets React Router handle routing
     noInfo: true, // makes webpack less verbose
     hot: true,
@@ -48,7 +64,11 @@ module.exports = {
   ],
 
   node: {
-    fs: 'empty'
+    fs: 'empty',
+    tls: 'empty',
+    dns: 'empty',
+    console: true,
+    net: 'empty'
   },
 
   devtool: 'cheap-module-eval-source-map'

@@ -17,5 +17,5 @@ from flashcards.serializers import CardViewSet
 from rest_framework import routers
 
 router = routers.DefaultRouter()
-router.register(r'cards', CardViewSet)
+router.register(r'api/cards', CardViewSet)
 urlpatterns = router.urls

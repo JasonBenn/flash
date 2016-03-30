@@ -26,8 +26,8 @@ export default class App extends Component {
 
   titleStyle = {
     "color": "rgba(0, 0, 0, .40)",
-    "font-size": "14px",
-    "text-transform": "uppercase",
+    "fontSize": "14px",
+    "textTransform": "uppercase",
     "lineHeight": "56px"
   }
 
